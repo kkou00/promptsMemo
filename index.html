@@ -117,6 +117,7 @@ $('#list').onclick=async e=>{
 $('#q').oninput=e=>{q=e.target.value;render()};
 $('#fav').onclick=()=>{favOnly=!favOnly;render()};
 $('#add').onclick=()=>edit(null);
+$('#ppl').onclick=()=>people();
 $('#selb').onclick=()=>{selMode=!selMode;sel.clear();render()};
 $('#bx').onclick=()=>{selMode=false;sel.clear();render()};
 $('#ba').onclick=()=>{const v=vis();sel=sel.size==v.length?new Set():new Set(v.map(p=>p.id));render()};
